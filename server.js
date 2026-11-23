@@ -11,6 +11,10 @@ const IMAGE_MODEL = process.env.REPLICATE_IMAGE_MODEL || "black-forest-labs/flux
 
 app.use(express.static("public"));
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
 app.get("/api/health", (req, res) => {
   res.json({
     ok: true,
