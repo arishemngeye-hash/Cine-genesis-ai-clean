@@ -5,9 +5,9 @@ const app = express();
 app.use(express.json({ limit: "2mb" }));
 app.use(cors());
 
-const PORT = process.env.PORT || 10000;
-const TOKEN = process.env.REPLICATE_API_TOKEN;
-const image_model="@cf/black-forest-labs/flux-1-schnell"
+const ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID;
+const API_TOKEN = process.env.CLOUDFLARE_API_TOKEN;
+const image_model = "@cf/black-forest-labs/flux-1-schnell"
 
 app.use(express.static("public"));
 
