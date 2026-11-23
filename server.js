@@ -7,7 +7,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 10000;
 const TOKEN = process.env.REPLICATE_API_TOKEN;
-const IMAGE_MODEL = process.env.REPLICATE_IMAGE_MODEL || "black-forest-labs/flux-schnell";
+const image_model="@cf/black-forest-labs/flux-1-schnell"
 
 app.use(express.static("public"));
 
