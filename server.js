@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-
+const path = require("path");
 const app = express();
 app.use(express.json({ limit: "2mb" }));
 app.use(cors());
